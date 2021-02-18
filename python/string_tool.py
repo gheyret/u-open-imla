@@ -1,7 +1,7 @@
 import re
 
 
-def txt_to_words(context: str):
+def text_to_words(context: str):
     """
     从给定内容中去掉所有非母语内容，只保留母语部分
     [从给定内容中提取词]
@@ -19,4 +19,4 @@ def txt_to_words(context: str):
 if __name__ == '__main__':
     pass
     target_contents = "你好么,hello -world, ياخشىمۇ سىز"
-    print("target_contents,txt_to_words", target_contents, txt_to_words(target_contents))
+    print("target_contents,txt_to_words", target_contents, text_to_words(target_contents))

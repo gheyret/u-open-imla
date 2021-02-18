@@ -12,7 +12,7 @@ def text_to_words(context: str):
     if len(context) == 0:
         return []
 
-    context = re.sub("[^\u0626-\u06d5]", " ", context)  # 非母语替换成空白
+    context = re.sub("[^چۋېرتيۇڭوپھسداەىقكلزشغۈبنمئلاۆجخگفژٴحعۉۅ]", " ", context)  # 非母语替换成空白
     return context.split()
 
 

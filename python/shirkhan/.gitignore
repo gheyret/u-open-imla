@@ -1,0 +1,7 @@
+.idea
+.vscode
+venv
+*.egg-info
+*__*__
+dist
+build

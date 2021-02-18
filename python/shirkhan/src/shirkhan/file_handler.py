@@ -1,5 +1,5 @@
 import os
-from string_tool import text_to_words
+from .string_tool import text_to_words
 
 """
 处理文件句柄
@@ -13,6 +13,7 @@ class File:
         self.path = file_path
 
     def get_lines(self, mode="r", encoding="utf-8"):
+        file_lines = []
         with open(self.path, mode=mode, encoding=encoding) as f:
             file_lines = f.readlines()
         return file_lines

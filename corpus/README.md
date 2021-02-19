@@ -7,3 +7,17 @@
 3. 可以做其他统计类工作，如实用性，频率等
 4. 可以用来做输入法推荐词库
 5. 其他
+
+# 词库加解密
+
+本目录下的词汇都是用 shirkhan lib中的encode算法来加密的，需要时可以使用对应的decode解密来。
+
+使用python代码加密解密指南：
+
+```python
+from shirkhan import decode, encode
+
+encode("xxxx")
+decode("yyy")
+
+```

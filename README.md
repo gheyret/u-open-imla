@@ -1,5 +1,7 @@
 # u-open-imla
 
+## 维吾尔校对词汇基库
+
 uyghur imla sozlvk ambiri
 
 ## 我们需要你
@@ -26,3 +28,16 @@ uyghur imla sozlvk ambiri
 - [x] 脚本集做成 library，方便使用、扩展、维护、更新
 - [x] 准备纯文本中提取内容脚本
 
+# 常用 shell 命令
+
+统计 corpus 中各个文件 和行数
+
+```shell
+ ls ./corpus/**/*.txt|xargs -n 1 -I {} wc -l {}
+```
+
+统计总 corpus 行数
+
+```shell
+ls ./corpus/**/*.txt|xargs -n 1 -I {} wc -l {}|awk -F " "  '{sum += $1} END {print sum}'
+```

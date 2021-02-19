@@ -16,3 +16,4 @@ encode("xxxx")
 decode("yyy")
 
 ```
+> 更多使用案例请看 examples目录中的脚本

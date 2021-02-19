@@ -17,10 +17,12 @@ uyghur imla sozlvk ambiri
 
 ## todo list
 
-1. [ ] 用现在积累的语料词汇集生成校对过的有效 imla 词汇集 [202102191122]
+- [ ] 继续找靠谱语料数据，继续扩展 imla_core 词汇
+- [ ] 基于 merged_corpus_20210219144221.txt 生成推荐词词库 [20210219144221]
 
 ## finished list
 
+- [x] 用现在积累的语料词汇集生成校对过的有效 imla 词汇集 [202102191122]
 - [x] 提取 shirkhan 公众号的历史帖子中的词汇，生成原料词汇
 - [x] 提取 fyj_ad1 中的词汇，生成原料词汇
 - [x] 提取 txw 中的词汇，生成原料词汇
@@ -33,11 +35,11 @@ uyghur imla sozlvk ambiri
 统计 corpus 中各个文件 和行数
 
 ```shell
- ls ./corpus/**/*.txt|xargs -n 1 -I {} wc -l {}
+ ls ./corpus/sources/**/*.txt|xargs -n 1 -I {} wc -l {}
 ```
 
 统计总 corpus 行数
 
 ```shell
-ls ./corpus/**/*.txt|xargs -n 1 -I {} wc -l {}|awk -F " "  '{sum += $1} END {print sum}'
+ls ./corpus/sources/**/*.txt|xargs -n 1 -I {} wc -l {}|awk -F " "  '{sum += $1} END {print sum}'
 ```

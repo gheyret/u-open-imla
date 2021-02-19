@@ -11,7 +11,8 @@ echo "处理之前语料总量统计信息:"
 ls ./sources/**/*.txt | xargs -n 1 -I {} wc -l {} | awk -F " " '{sum += $1} END {print sum}'
 
 merge_id=$(date +%Y%m%d%H%M%S)
-new_file="merged_data_sets/v1_${merge_id}".txt
+order_num=$(ls merged_data_sets|wc -l|awk '{print $1+1}')
+new_file="merged_data_sets/v${order_num}_${merge_id}".txt
 
 cat ./sources/**/*.txt >>$merge_id
 # 去重

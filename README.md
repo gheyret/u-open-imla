@@ -6,9 +6,10 @@ uyghur tili imla sozlvk ambiri
 
 ## 目前的词汇情况
 
-- 总语料词汇 ` 104,240 `s
+- 总语料词汇 ` 116，773 `
 - 标准词汇 ` 49,659 `
 - 推荐词  ` 4044 `
+
 ---
 
 ## 我们需要你
@@ -25,6 +26,7 @@ uyghur tili imla sozlvk ambiri
 ## todo list
 
 - [ ] 继续找靠谱语料数据，继续扩展 imla_core 词汇
+- [ ] 处理合并语料 v1_20210219174227.txt 生成标准词汇和推荐词 [20210219174227]
 
 ## finished list
 

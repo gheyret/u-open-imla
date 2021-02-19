@@ -1,6 +1,8 @@
 # 目录说明
 
 - standard_words 目前定性为标准的词汇集
+- recommended_words 推荐词
+    > 每个文件的 [0]是源，[1:]是推荐内容
 
 这个目录下存放：
 

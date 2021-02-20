@@ -26,6 +26,7 @@ uyghur tili imla sozlvk ambiri
 ## todo list
 
 - [ ] 继续找靠谱语料数据，继续扩展 imla_core 词汇
+- [ ] 处理合并语料 v3_20210220104002.txt 生成标准词汇和推荐词 [20210220104002]
 
 ## finished list
 
